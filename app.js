@@ -17,8 +17,14 @@ http.createServer((req, res) => {
                 res.end();
             });
         }
-        
         // res.end();
 }).listen(3000);
 
 console.log("service running on 3000 port....");
+
+
+ apiCallFromNode = JSON.parse(result);
+var keys = Object.keys(apiCallFromNode);
+for (var i = 0; i < keys.length; i++) {
+  console.log(apiCallFromNode[keys[i]]);
+}

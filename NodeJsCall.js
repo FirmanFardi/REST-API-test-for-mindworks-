@@ -1,7 +1,6 @@
-
 const https = require('https');
  
-_EXTERNAL_URL = 'https://test-proj-heroku.herokuapp.com/api/plans';
+_EXTERNAL_URL = 'https://jsonplaceholder.typicode.com/comments';
 
 
 const callExternalApiUsingHttp = (callback) => {
@@ -24,5 +23,6 @@ const callExternalApiUsingHttp = (callback) => {
     console.log("Error: " + err.message);
     });
 }
+
 
 module.exports.callApi = callExternalApiUsingHttp;
